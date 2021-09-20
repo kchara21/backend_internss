@@ -25,7 +25,7 @@ const getPasantes = (req, res) => __awaiter(void 0, void 0, void 0, function* ()
         res.send(users);
     }
     else {
-        res.status(403).json({ message: 'No interns found ASDASDAD' });
+        res.status(403).json({ message: 'No interns found' });
     }
 });
 exports.getPasantes = getPasantes;

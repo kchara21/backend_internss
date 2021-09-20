@@ -17,7 +17,7 @@ export const getPasantes = async (req: Request, res: Response) => {
     if(users.length>0){
         res.send(users);
     }else{
-        res.status(403).json({message:'No interns found ASDASDAD'});
+        res.status(403).json({message:'No interns found'});
     }
   
 
