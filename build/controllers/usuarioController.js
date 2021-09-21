@@ -23,7 +23,7 @@ UsuarioController.getAll = (req, res) => __awaiter(void 0, void 0, void 0, funct
         users = yield userRepository.find({ select: ['id', 'username', 'role'] });
     }
     catch (e) {
-        return res.status(404).json({ message: 'Not Result' });
+        return res.status(404).json({ message: 'Not Users Found' });
     }
     if (users.length > 0) {
         res.send(users);

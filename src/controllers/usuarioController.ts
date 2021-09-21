@@ -12,7 +12,7 @@ class UsuarioController{
              users = await userRepository.find({ select: ['id', 'username', 'role'] });
         }
         catch(e){
-          return res.status(404).json({message:'Not Result'});
+          return res.status(404).json({message:'Not Users Found'});
         }
 
         if(users.length>0){
